@@ -1,121 +1,181 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <title>Kaspersky Plus - Защита ваших данных</title>
     <meta charset="UTF-8" />
-    <meta content="IE=7" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <title>Видеомир18+</title>
     <link rel="stylesheet" href="styles/app.css" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="theme-color" content="#000" />
+    <meta charset="utf-8" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
   <body>
-    <div id="app">
-      <div class="shapes-container">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
-      </div>
-
-      <div class="glass-container">
-        <div class="glass-content"></div>
-      </div>
-
-      <header class="header">
-        <div class="header__container container">
-          <div>
-            <button class="header__burger">
-              <img alt="" src="assets/images/burger.png" />
-            </button>
-          </div>
-          <div class="header__right">
+    <div class="row"></div>
+    <div class="container">
+      <div class="row">
+        <!--Player block-->
+        <div class="col-xs-12">
+          <!--Player -->
+          <div class="player">
             <div class="age">18+</div>
-            <button class="header__user"><img alt="" src="assets/images/user.png" /></button>
-          </div>
-        </div>
-        <div class="header__container container">
-          <form class="header__search">
-            <input placeholder="поиск..." type="text" disabled />
-            <button disabled>
-              <img src="assets/images/search.svg" alt="" />
-            </button>
-          </form>
-        </div>
-      </header>
-
-      <main class="main">
-        <section class="player">
-          <div class="player__container container">
-            <div class="player__window">
-              <div class="player__head">
-                <span class="player__quality"><span>1080p</span></span>
-                <span class="player__time">06:36</span>
+            <div class="wait"></div>
+            <div class="screen">
+              <div class="bg">
+                <p id="elementsToDisplayNone" class="utp">Подтвердите свое совершеннолетие</p>
+                <p id="elementsToDisplayFlex" class="utp">
+                  Смотри горячие <br />
+                  ролики
+                </p>
               </div>
-              <div class="player__panel panel">
-                <div class="panel__containerLine"></div>
-                <div class="panel__containerManagement">
-                  <button class="panel__play"><img alt="" src="assets/images/play.png" /></button>
-                  <button class="panel__sound"><img alt="" src="assets/images/sound.png" /></button>
-                  <div class="panel__time">0:01 / 06:36</div>
-                  <div class="panel__control">
-                    <button class="panel__setting">
-                      <img alt="" src="assets/images/set.png" />
-                    </button>
-                    <button class="panel__wid"><img alt="" src="assets/images/wid.png" /></button>
+              <div onclick="showInfo()" class="button-container">
+                <div id="elementsToDisplayFlex" class="btn btn-pos-rel-xs custom-btn-1">
+                  <div class="title">
+                    <img id="playimg" src="index_files/play.png" alt="" /> PLAY
+                  </div>
+                </div>
+                <!-- </div> -->
+                <div id="elementsToDisplayNone" class="btn btn-pos-rel-xs custom-btn-1">
+                  <div class="title">
+                    <img id="playimg" src="index_files/play.png" alt="" /> ПОДТВЕРЖДАЮ
                   </div>
                 </div>
               </div>
-
-              <div class="player__control player__default btn-box">
-                <h1 class="player__disclaimer">
-                  Безопасный просмотр любых видео
-                  <span>c Kaspersky Plus на 1 устройство и Защитник</span>
-                </h1>
-                <a href="http://ya.ru" style="display: contents">
-                  <button class="player__playContainer btn-agree buy">
-                    <div class="player__textBtn">
-                      <h2>Смотреть</h2>
-                    </div>
-                    <img alt="" src="assets/images/playMax.png" />
-                  </button>
-                </a>
-                <p class="player__description">179 руб в месяц, списание с мобильного счета</p>
+              <div>
+                <div id="elementsWithZeroOpacity" class="legal">
+                  Первый день бесплатно, затем 40 руб. в день
+                  <br />
+                  Списание со счета мобильного телефона
+                </div>
+                <span style="display: none"
+                  >Оплата производится с основного счета 40 руб. с учетом НДС за 1 день
+                  <a href="http://moy-m-portal.ru/moi_podpiski">Личный кабинет</a>
+                </span>
+              </div>
+              <a
+                id="elementsWithZeroOpacity"
+                class="btn btn-cancel-xs custom-cancel op-land"
+                href="javascript:back();"
+                >X</a
+              >
+            </div>
+          </div>
+          <div id="picsHidden" class="row">
+            <div class="row line">
+              <div class="rate-col">
+                <span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#ffbc3f"
+                    stroke-width="2"
+                  >
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                  214 938 просмотров
+                </span>
+                <span class="rate-divider">•</span>
+                <span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#ffbc3f"
+                    stroke-width="2"
+                  >
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                  1 247 обсуждений
+                </span>
               </div>
             </div>
-          </div>
-        </section>
 
-        <section class="watch">
-          <div class="watch__container container">
-            <div class="watch__eye">
-              <img alt="" src="assets/images/eye.png" /> <span>320К</span>
+            <div class="tags-block">
+              <span class="pill">Соблазнительно</span>
+              <span class="pill">Откровенно</span>
+              <span class="pill">Эротика</span>
+              <span class="pill">Страсть</span>
+              <span class="pill">Тёмные волосы</span>
+              <span class="pill">Фигура</span>
             </div>
-            <div class="watch__like">
-              <img alt="" src="assets/images/like.png" /> <span>100%</span>
-            </div>
-            <div class="watch__dislike">
-              <img alt="" src="assets/images/dislike.png" /> <span>0%</span>
-            </div>
-            <div class="watch__message">
-              <img alt="" src="assets/images/message.png" /> <span>24</span>
-            </div>
-            <div class="watch__layer">
-              <img alt="" src="assets/images/layer.png" />
+
+            <div class="meta-row">
+              <span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#f90"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="2" />
+                  <path d="M7 2l4 5M17 2l-4 5M2 7h20" />
+                </svg>
+                142 389 просмотров
+              </span>
+              <span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#f90"
+                  stroke-width="2"
+                >
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                </svg>
+                Горячее видео
+              </span>
             </div>
           </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        18+. Нажимая на кнопку «Смотреть», Вы соглашаетесь с подключением подписки Kaspersky Plus на
-        1 устройство и Защитник и условиями сервиса. Услугу предоставляет ПАО «МТС»
-      </footer>
+        </div>
+      </div>
     </div>
-
+    <div class="row bottom-stick thick">
+      <div id="elementsToDisplayNone" class="prelandFooterText">
+        Доступ к сервису от 18 лет.
+        <br />
+        Нажатием на "Подтверждаю" Вы подтверждаете свое совершеннолетие
+      </div>
+      <div id="elementsToDisplayFlex" class="col-sm-12 footer-rules text-center">
+        <div id="elementsWithZeroOpacity" class="top">
+          Нажатием на кнопку «Смотреть», Вы соглашаетесь с
+          <a href="#">«Условиями мобильных подписок» и принимаете условия</a>
+          <a href="#">«Пользовательского соглашения» сервиса SUBNAME. Стоимость</a>
+          услуги: SUBPRICE с учетом НДС за 1 день. Оплата производится со счета телефона. Услугу
+          предоставляет контент-провайдер PROVIDER.
+        </div>
+      </div>
+    </div>
     <script>
-      function goBack() {
-        history.go(-1);
+      function showInfo() {
+        const elementsToDisplayNone = document.querySelectorAll('#elementsToDisplayNone');
+        const elementsToDisplayFlex = document.querySelectorAll('#elementsToDisplayFlex');
+        const elementsWithZeroOpacity = document.querySelectorAll('#elementsWithZeroOpacity');
+        const opacityOne = document.getElementById('opacityOne');
+
+        for (let elem of elementsWithZeroOpacity) {
+          elem.style.opacity = '1';
+        }
+        for (let noneElem of elementsToDisplayNone) {
+          noneElem.style.display = 'none';
+        }
+        for (let flexElem of elementsToDisplayFlex) {
+          flexElem.style.display = 'flex';
+        }
+
+        opacityOne.style.opacity = 0;
       }
+      let foo = 1;
     </script>
   </body>
 </html>
